@@ -1,0 +1,133 @@
+html {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+    box-sizing: inherit;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./assets/batman1989keaton_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;  
+}
+
+p, h1, h2, h3,h4, h5, h6  {
+    margin: 0;  
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    font-size: 18px;
+    max-width: 1200px;
+    margin: 0 auto; /* serve para centralizar */  
+}
+
+header {
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+header .wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header-links {
+    width: 100%;        
+}
+
+.header-links ul {
+    display: flex;   
+    justify-content: space-between;
+    list-style: none;    
+}
+
+.header-links ul li a {
+    color: #fff;
+    display: flex;   
+    text-decoration: none;
+    transition: 0.9s;
+    position: relative;   
+}
+
+.header-links ul li a:hover {
+    color: yellow;
+    display: block;
+    text-decoration-line: underline;       
+}
+
+.header-logo img {
+    width: 10%;
+    height: auto;
+}
+
+.main-section {
+    font-family: 'Bebas Neue', cursive;
+    width: 100%;   
+    color: #fff;
+}
+
+.main-section p {
+    margin-top: 15px;
+    font-family: sans-serif;    
+    width: 42%;
+}
+
+.main-section-image img {
+    margin-top: 50px;
+    margin-left: 90px;    
+    height: 120px;
+    width: 320px;
+}
+
+.main-section-trailer {
+    margin-top: 50px;
+}
+
+.main-section-trailer a {    
+    color: #fff;
+    text-decoration: none;
+    transition: 0.9s;
+}
+
+
+.main-section-trailer a:hover {
+    color: yellow;
+    animation-name: changeColor;
+}
+
+footer {    
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;    
+    margin-top: 250px;        
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: center; 
+}
+
+footer p {
+    background-color: yellow;
+}
+
+.paragrafo{
+    color: green;
+}
